@@ -8,9 +8,9 @@
 body{
     min-width: 375px;
     height: 100vh;
-    display: flex;
+    /* display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-between; */
 }
 
 .list_container{
@@ -201,8 +201,8 @@ svg{
 }
 
 .container_footer{
-    /* position: absolute; */
-    /* bottom: 0; */
+    position: absolute;
+    bottom: 0;
     background-color: #F2F2F2;
     width: 100%;
     min-width: 375px;
@@ -225,6 +225,11 @@ svg{
     padding: 15px 30px;
 }
 
+.country_inf{
+    border-bottom: 1px solid #dadce0;
+    margin-bottom: -1px;
+}
+
 .item_list-fotter a{
     color: #70757a;
     font-size: 14px;
@@ -245,4 +250,18 @@ svg{
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+}
+
+@media screen and (min-width: 856px) {
+    .fotter_inf{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        padding: 0 20px;
+    }
+    .more_services,
+    .conditions_footer,
+    .item_list-fotter{
+        display: inline-block;
+    }
 }
