@@ -257,6 +257,18 @@ svg{
         display: flex;
         flex-direction: row;
         justify-content: space-evenly;
+    }
+    .more_services,
+    .conditions_footer,
+    .item_list-fotter{
+        display: inline-block;
+    }
+}
+@media screen and (min-width: 1200px) {
+    .fotter_inf{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
         padding: 0 20px;
     }
     .more_services,
@@ -265,3 +277,16 @@ svg{
         display: inline-block;
     }
 }
+
+
+
+
+
+/* 
+    Usa un
+    justify-content: space-evenly;
+
+    justify-content: space-between;
+    and
+    padding 0: 20px
+*/
